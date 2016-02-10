@@ -1,0 +1,89 @@
+%nav
+	.nav-wrapper
+		%a.brand-logo{:href => "#"}= image_tag("smnmays.png", alt: "nmays", class: "smnmays")
+		%ul#nav-mobile.right.hide-on-med-and-down
+			%li
+				%a{:href => "mailto:tash.mays@gmail.com?Subject=Hello", :target => "_top"} Contact Me
+			%li
+				%a{:href => "http://ec2-52-27-246-231.us-west-2.compute.amazonaws.com/", :target => "_"} AWS
+%head
+	.page-wrap
+		#card1.card
+			.center
+				%img#headshot{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/1_zpswpmwvpdq.jpg"}
+			.content
+				%h1 About Me
+				%p.clickable Hello! I am a Software Engineer/Web Developer whom loves clean, simple, & intuitive code. Learning is a passion of mine due to the fact that you never stop growing, that is what life is all about. I use a plethora of technologies that you can view <strong><a href="#card4">here</a></strong>. However, I am in the process of learning nodeJS & AngularJS. Some of my hobbies include Judo(7 State Championships in Utah & Idaho), Brazilian Jiu Jitsu, Wing Chun, Acro-Yoga, Hiking, Bicycling, Sailing & Skiing. Please feel free to ask me any questions you have by selecting the 'Contact Me' link above. Thanks again for visiting my page!
+				%h2 Checkout My Other Profiles
+				.icon-block.center.clickable
+					%a{:href => "https://github.com/tashmays", :target => "_blank"}
+						%img.social{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/Github_zpsnkz9kl1k.png"}
+					%a{:href => "https://www.linkedin.com/in/natashamays", :target => "_blank"}
+						%img.social{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/linkedin_zpst3aisoty.png"}
+					%a{:href => "https://www.facebook.com/natasha.k.mays", :target => "_blank"}
+						%img.social{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/facebook_zps0tjswcwv.png"}
+					%a{:href => "https://twitter.com/tashmays", :target => "_blank"}
+						%img.social{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/twitter_zpscc7wwvsm.png"}
+		#card2.card
+			.content
+				%h1 Ruby Projects
+				%p Here are some basic Ruby Projects. Click the image to view the code.
+				.app-block.center.clickable
+					%a{:href => "https://github.com/tashmays/the_real_todo_list", :target => "_blank"}
+						.app{:style => "background:url(http://i139.photobucket.com/albums/q315/Natasha_Mays/therealtodolist_zps3hllfbue.png) center; background-size: cover;"}
+						%span.title Todo Lists
+					%a{:href => "https://github.com/tashmays/mini_fb", :target => "_blank"}
+						.app{:style => "background:url(http://i139.photobucket.com/albums/q315/Natasha_Mays/fauxbook3.jpg_zpsmss92wf6.png) center; background-size: cover;"}
+						%span.title Fauxbook
+					%a{:href => "https://github.com/tashmays/dating_app2", :target => "_blank"}
+						.app{:style => "background:url(http://i139.photobucket.com/albums/q315/Natasha_Mays/hatch.jpg_zps5zo0ste7.png) center; background-size: cover;"}
+						%span.title Hatch.com
+					%a{:href => "https://github.com/scotttball/Bucketly", :target => "_blank"}
+						.app{:style => "background:url(http://i139.photobucket.com/albums/q315/Natasha_Mays/Screen%20Shot%202016-02-08%20at%2011.10.28%20PM_zpsifxpmtww.png) center; background-size: cover;"}
+						%span.title Bucketly
+		#card3.card
+			.content
+				%h1 Comprehensive Logic Projects
+				%p Here are some complex logic Ruby Projects. Click the image to view the code.
+				.app-block.center.clickable
+					%a{:href => "https://github.com/Valcroca/memory_match", :target => "_blank"}
+						.app{:style => "background:url(http://i139.photobucket.com/albums/q315/Natasha_Mays/memory_match.jpg_zpszhix7n9y.png) center; background-size: cover;"}
+						%span.title jQuery Memory Game
+					%a{:href => "http://towsmith.herokuapp.com/", :target => "_blank"}
+						.app{:style => "background:url(http://i139.photobucket.com/albums/q315/Natasha_Mays/e18a77f9-7a51-499a-87b5-2f1115780a28_zpsje8lki5n.png) center; background-size: cover;"}
+						%span.title TowSmith
+					%a{:href => "https://github.com/tashmays/conference", :target => "_blank"}
+						.app{:style => "background:url(http://i139.photobucket.com/albums/q315/Natasha_Mays/ce3cfec9-28c7-4084-833e-76af930f5c93_zpselxmmjsa.png) center; background-size: cover;"}
+						%span.title Conference App
+					%a{:href => "https://github.com/coreyrugino/salt_life", :target => "_blank"}
+						.app{:style => "background:url(http://i139.photobucket.com/albums/q315/Natasha_Mays/saltlifemeet.jpg_zpsd6hg54vy.png) center; background-size: cover;"}
+						%span.title Salt Life
+					%a{:href => "https://github.com/lovelandnoah/super_budget", :target => "_blank"}
+						.app{:style => "background:url(http://i139.photobucket.com/albums/q315/Natasha_Mays/beb9106f-dd92-4762-8659-7511cf6a4fe4_zpsdxofxoi3.png) center; background-size: cover;"}
+						%span.title Super Budget
+					%a{:href => "https://github.com/tashmays/twitter_clone", :target => "_blank"}
+						.app{:style => "background:url(http://i139.photobucket.com/albums/q315/Natasha_Mays/twitterclone.jpg_zpsdjd5pezh.png) center; background-size: cover;"}
+						%span.title Twitter Clone
+		#card4.card
+			.content
+				%h1 Technologies
+				%p 
+				.app-block.center
+					.container
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/icon-rails_zps4sjulxyx.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/html5_zps0jwinu7u.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/css3_zpsgyk6ppcq.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/javascript_zpsf9nxxefk.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/reactjs_zpsywpifhbd.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/jquery_zpsu83hdhe0.png"}
+					.container
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/postgresql_zpsjkj8q4v0.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/sql_zpsgndjh7zi.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/materializecss_zpszfyw9ekf.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/AWS_zps45err7vy.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/heroku_zpsswbkf4je.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/git_zps1nykojhc.png"}
+						%img.techicon{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/commandline_zpsswkuaxzo.png"}
+				%p.center Created by
+				%a.center{:href => ""}
+					%img.natasha{:src => "http://i139.photobucket.com/albums/q315/Natasha_Mays/nmays.jpg_zpstn0vyi7y.gif"}

@@ -1,0 +1,257 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	max-width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	transform-style: preserve-3d;
+	background-color: #000;
+}
+
+.page-wrap {
+	margin: 0;
+	padding: 0;
+	perspective: 1px;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: 'avenir next', avenir, helvetica, 'helvetica neue', arial, sans-serif;
+	color: black;
+	background: none;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1.2em;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}.clickable{
+	transform: translateZ(0);
+}
+
+a {
+	color: rgb(222, 68, 21);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rbg(0, 116, 217);
+}
+
+.screen-reader-text {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+#headshot {
+	width: 220px;
+	padding: .5em;
+	margin-bottom: -3em;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, .4);
+	box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+}
+
+.content {
+	width: 80vw;
+	max-width: 45em;
+	padding: 1.5em 2em;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, .75);
+	box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+}
+
+.card {
+	position: relative;
+	padding: 25vh 15px 25vh 2px;
+	min-height: 100%;
+	max-width: 100vw;
+	transform-style: inherit;
+}
+
+.card:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.card,
+.card:before {
+	background: 50% 50% / cover;
+}
+
+#card1 {
+	background-image: url(https://images.unsplash.com/photo-1447877015176-3099cb49cd6a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c370c77fd779afe99eb0ff05fe9f0907);
+	/*background: linear-gradient(rgba(0, 116, 217, .75), rgba(222, 68, 21, .85)), url();*/
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+}
+
+#card2 {
+	background-color: rgb(207, 216, 220);
+	/*background-image: url(http://cdn.mysitemyway.com/etc-mysitemyway/backgrounds/legacy-previews/backgrounds/watercolor-grunge/watercolor-grunge-000030-medium-blue.jpg);*/
+ /* background-size:
+  	550px 550px,
+  	350px 350px,
+  	250px 250px,
+  	150px 150px;
+  background-position:
+  	0 0,
+  	40px 60px,
+  	130px 270px,
+  	70px 100px;*/
+  /*margin: 20em 0 35em 0;*/
+}
+
+#card3 {
+	background-image: url(http://images7.alphacoders.com/390/390071.jpg);
+	/*background-color: black;
+  background-image:
+    radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+  background-size:
+    550px 550px,
+    350px 350px,
+    250px 250px,
+    150px 150px;*/
+}
+
+#card4 {
+	background-image: url(https://static.pexels.com/photos/6415/apple-desk-office-working-large.jpg);
+	/*margin-top: 35em*/;
+}
+
+.app-block {
+	flex-flow: row wrap;
+}
+
+.app {
+	width: 300px;
+	height: 225px;
+	max-width: 50vw;
+	margin: .5em;
+	box-shadow: .3em .3em .3em rgba(0, 0, 0, .4);
+	border: .25em solid white;
+	display: inline-block;
+}
+
+span.title{
+	background: rgba(0,0,0,0,.5);
+	color: white;
+	cursor: pointer;
+	display: table;
+}
+
+span.title span {
+	width: 295px;
+	height: 218px;
+	max-width: calc(50vw - 8px);
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.app span.title:hover {
+	opacity: 1;
+}
+
+
+span.title {
+	background: rgba(0,0,0,0,.5);
+	font-size: 1.6em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	display: table;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transtion: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+
+.signature {
+	text-align: center;
+	margin-top: 3.5em;
+}
+
+.techicon {
+	width: 85px;
+	height: 85px;
+}
+
+.natasha {
+	width: 260px;
+	height: 105px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+		height: 70px;
+}
+
+li {
+    float: right;
+		margin: 0;
+		padding: 0;
+		perspective: 1px;
+		height: 100%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		font-family: 'avenir next', avenir, helvetica, 'helvetica neue', arial, sans-serif;
+		color: black;
+		background: none;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+	height: 70px;
+}
+
+nav {
+	background-color: white;
+}
+
+.smnmays {
+	position: absolute;
+}
+
+.social:hover{
+	background: #CCC;
+	opacity:0.6;
+}
